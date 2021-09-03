@@ -1,12 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/91cc94fb16.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="src/style.css" />
+		<title>Papos weather app</title>
+	</head>
+	<body>
+		<div class="container">
+			<video autoplay muted loop id="myVideo">
+				<source src="media/sky.mp4" type="video/mp4" />
+			</video>
+			<nav class="navbar navbar-light header">
+				<h1>Papo's WEATHER APP</h1>
+			</nav>
+
+			<div class="row">
+				<div class="col">
+					<div class="card mt-1 border-warning">
+						<div class="card-body">
+							<form class="form-inline text-center">
+								<label
+									class="my-1 mr-2 font label"
+									for="inlineFormCustomSelectPref"
+									>Check the Weather from this city</label
+								>
+								<select
+									class="custom-select my-1 mr-sm-2 font"
+									id="inlineFormCustomSelectPref"
+								>
+									<option selected>Ottawa</option>
+									<option value="1">Paris</option>
+									<option value="2">Lisbon</option>
+									<option value="3">Bogota</option>
+								</select>
+
+								<button type="submit" class="btn btn-warning my-1 font">
+									Go
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row mt-2">
+						<div class="card bg-warning text-white">
+							<h3 class="card-header text-center">23°C Sunny</h3>
+							<h4 class="hard-text text-center">Wednesday</h4>
+							<h4 class="hard-text text-center">SEPTEMBER 1</h4>
+							<img src="media/sunny.jpg" alt="women coding" class="sunflower" />
+							<h3 class="card-title text-center">Ottawa</h3>
+							<h2 class="card-text text-center flag">🇨🇦</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="row mt-2">
+						<div class="col">
+							<div class="card border-warning">
+								<h4 class="card-header text-center border-warning">
+									7-Day Weather Forecast
+								</h4>
+								<div class="card-body">
+									<div class="row border">
+										<div class="col text-center mt-2">
+											<p class="icon">☀️</p>
+										</div>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
+
+											<row class="col">
+												<p class="card-text">Thursday</p>
+											</row>
+											<row class="col">
+												<p class="card-text">Sept 2</p>
+											</row>
+										</div>
+									</div>
+
+									<div class="col">
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">🌥</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">23°C</h5>
+
+												<row class="col">
+													<p class="card-text">Friday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 3</p>
+												</row>
+											</div>
+										</div>
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">☀️</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">20°C</h5>
+
+												<row class="col">
+													<p class="card-text">Saturday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 4</p>
+												</row>
+											</div>
+										</div>
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">🌦</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">23°C</h5>
+
+												<row class="col">
+													<p class="card-text">Sunday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 5</p>
+												</row>
+											</div>
+										</div>
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">☀️</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">28°C</h5>
+
+												<row class="col">
+													<p class="card-text">Monday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 6</p>
+												</row>
+											</div>
+										</div>
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">⛈</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">15°C</h5>
+
+												<row class="col">
+													<p class="card-text">Tuesday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 7</p>
+												</row>
+											</div>
+										</div>
+										<div class="row border">
+											<div class="col text-center mt-4">
+												<p class="icon">🌥</p>
+											</div>
+											<div class="col">
+												<h5 class="card-title mt-2">25°C</h5>
+
+												<row class="col">
+													<p class="card-text">Wednesday</p>
+												</row>
+												<row class="col">
+													<p class="card-text">Sept 8</p>
+												</row>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="app.js"></script>
+			<div class="row">
+				<div class="col">
+					<footer class="footer font">
+						Coded by
+						<a
+							href="https://www.linkedin.com/in/perezleivapaola/"
+							target="blank"
+							class="linkedin"
+						>
+							Paola Perez
+						</a>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
