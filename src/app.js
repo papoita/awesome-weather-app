@@ -32,8 +32,9 @@ if (weather[city] !== undefined) {
 	let tempF = Math.round((tempC * 9) / 5 + 32);
 	let humid = weather[city].humidity;
 
-	alert(`It is currently ${tempC}°C 
-  ${tempF}°F in ${city} with a humidity of ${humid}%`);
+	alert(
+		`It is currently ${tempC}°C / ${tempF}°F in ${city} with a humidity of ${humid}%`
+	);
 } else {
 	alert(
 		`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
