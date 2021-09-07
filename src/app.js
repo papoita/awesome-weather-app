@@ -1,34 +1,41 @@
 /** @format */
 
-let weather = [
-	{ city: "paris", tempC: 19.7, tempF: 86, humidity: 80 },
-	{
-		city: "tokyo",
-		tempC: 17.3,
-		tempF: 74,
+let weather = {
+	paris: {
+		temp: 19.7,
+		humidity: 80,
+	},
+
+	tokyo: {
+		temp: 17.3,
 		humidity: 50,
 	},
-	{
-		city: "lisbon",
-		tempC: 30.2,
-		tempF: 95,
+	lisbon: {
+		temp: 30.2,
 		humidity: 20,
 	},
-	{
-		city: "san francisco",
-		tempC: 20.9,
-		tempF: 85,
+	"san francisco": {
+		temp: 20.9,
 		humidity: 100,
 	},
-	{ city: "moscow", tempC: -5, tempF: 58, humidity: 20 },
-];
+	moscow: {
+		temp: -5,
+		humidity: 20,
+	},
+};
 
 let city = prompt("Welcome to Papo's weather app, please enter a city");
+city = city.toLowerCase();
+if (weather[city] !== undefined) {
+	let temperature = weather[city].temp;
+	let tempC = Math.round(temperature);
+	let tempF = Math.round((tempC * 9) / 5 + 32);
+	let humid = weather[city].humidity;
 
-if ((city = true)) {
-	alert("It is currently 19°C (66°F) in Paris with a humidity of 80%");
+	alert(`It is currently ${tempC}°C 
+  ${tempF}°F in ${city} with a humidity of ${humid}%`);
 } else {
 	alert(
-		"Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney"
+		`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
 	);
 }
