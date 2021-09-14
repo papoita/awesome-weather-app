@@ -1,3 +1,5 @@
+/** @format */
+
 body {
 	background-size: cover;
 	width: auto;
@@ -83,4 +85,9 @@ footer {
 .linkedin:hover {
 	color: orange;
 	cursor: pointer;
+}
+
+.temp {
+	line-height: 80px;
+	font-size: 70px;
 }
