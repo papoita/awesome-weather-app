@@ -56,8 +56,10 @@ function searchCity(event) {
 	event.preventDefault();
 	let newCity = document.querySelector("#city-input");
 	console.log(newCity.value);
+
 	let h2 = document.querySelector("h2");
-	h2.innerHTML = `${newCity.value}`;
+
+	h2.innerHTML = `${newCity.value.toUpperCase()}`;
 }
 
 let cityForm = document.querySelector("#city-form");
