@@ -38,23 +38,17 @@
 				<div class="col">
 					<div class="card mt-1 border-warning">
 						<div class="card-body">
-							<form class="form-inline text-center">
+							<form class="form-inline text-center"
+							id="city-form">
 								<label
 									class="my-1 mr-2 font label"
 									for="inlineFormCustomSelectPref"
 									>Check the Weather from this city</label
 								>
-								<select
-									class="custom-select my-1 mr-sm-2 font"
-									id="inlineFormCustomSelectPref"
-								>
-									<option selected>Ottawa</option>
-									<option value="1">Paris</option>
-									<option value="2">Lisbon</option>
-									<option value="3">Bogota</option>
-								</select>
+									<input type="city" id="city-input" placeholder="Enter City">
+						
 
-								<button type="submit" class="btn btn-warning my-1 font">
+								<button type="submit" class="btn btn-warning my-1 font" id="go">
 									Go
 								</button>
 							</form>
@@ -62,18 +56,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-6">
+	<div class="col-sm-6">
 					<div class="row mt-2">
-						<div class="card bg-warning text-white">
-							<h3 class="card-header text-center">23°C Sunny</h3>
-							<h4 class="hard-text text-center">Wednesday</h4>
-							<h4 class="hard-text text-center">SEPTEMBER 1</h4>
+						<div class="col">
+							<div class="card border-warning">
+							<h2 class="card-header text-center border-warning" id = "new-city"></h2>
+							<h3 class="hard-text text-center" id = "current-time"></h3>
+						
 							<img src="media/sunny.jpg" alt="women coding" class="sunflower" />
-							<h3 class="card-title text-center">Ottawa</h3>
-							<h2 class="card-text text-center flag">🇨🇦</h2>
+								<h4 class="hard-text text-center">Temperature</h4>
 						</div>
 					</div>
+				</div>
 				</div>
 
 				<div class="col-sm-6">
