@@ -54,13 +54,14 @@ h3.innerHTML = ` ${day} <br> ${month} ${date},  ${year} <br> <small>${hours}:${m
 
 function searchCity(event) {
 	event.preventDefault();
-	let newCity = document.querySelector("#new-city");
-	console.log(`${newCity}`);
-	newCity.innerHTML = `${newCity.value}`;
+	let newCity = document.querySelector("#city-input");
+	console.log(newCity.value);
+	let h2 = document.querySelector("h2");
+	h2.innerHTML = `${newCity.value}`;
 }
 
-let cityInput = document.querySelector("#city-form");
-cityInput.addEventListener("submit", searchCity);
+let cityForm = document.querySelector("#city-form");
+cityForm.addEventListener("submit", searchCity);
 //feature 3
 // display fake temp in C and F that when clicked changes
 
