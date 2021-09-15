@@ -23,14 +23,11 @@ body {
 }
 
 h1 {
-	color: orange;
 	text-align: center;
 
-	padding: 40px;
 	font-size: 40px;
 	font-family: "Montaga", serif;
 	border-radius: 8px;
-	align-items: stretch;
 }
 
 h2 {
