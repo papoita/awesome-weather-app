@@ -78,17 +78,20 @@ function change() {
 
 let Cbutton = document.querySelector("#celcius");
 Cbutton.addEventListener("click", change);
-
-function change2() {
-	let Fbutton = document.querySelector("#temp-input");
-	let temperature = 23;
+*/
+function toFah() {
+	//let Fbutton = document.querySelector("#temp-input");
+	//let temperature = document.getElementById("temp-input");
+	let temperature = 25;
+	console.log(temperature);
+	//console.log(Fbutton.value);
 	let tempC = Math.round(temperature);
 	let tempF = Math.round((tempC * 9) / 5 + 32);
+	console.log(tempF);
 	document.getElementById(
 		"temp-input"
 	).innerHTML = `${tempF} °F <button class ="a1" id="celcius">°C </button>`;
 }
 
 let Fbutton = document.querySelector("#fahrenheit");
-Fbutton.addEventListener("click", change2);
-*/
+Fbutton.addEventListener("click", toFah);
