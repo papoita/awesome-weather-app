@@ -67,5 +67,27 @@ cityForm.addEventListener("submit", searchCity);
 //feature 3
 // display fake temp in C and F that when clicked changes
 
-//let tempC = Math.round(temperature);
-//let tempF = Math.round((tempC * 9) / 5 + 32);
+function change() {
+	let Cbutton = document.querySelector("#temp-input");
+	let temperature = 23;
+	let tempC = Math.round(temperature);
+	document.getElementById(
+		"temp-input"
+	).innerHTML = `${temperature} °C <button class ="a2" id="fahrenheit" >°F</button>`;
+}
+
+let Cbutton = document.querySelector("#celcius");
+Cbutton.addEventListener("click", change);
+
+function change2() {
+	let Fbutton = document.querySelector("#temp-input");
+	let temperature = 23;
+	let tempC = Math.round(temperature);
+	let tempF = Math.round((tempC * 9) / 5 + 32);
+	document.getElementById(
+		"temp-input"
+	).innerHTML = `${tempF} °F <button class ="a1" id="celcius">°C </button>`;
+}
+
+let Fbutton = document.querySelector("#fahrenheit");
+Fbutton.addEventListener("click", change2);
