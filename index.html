@@ -27,26 +27,27 @@
 	</head>
 	<body>
 		<div class="container">
-			<video autoplay muted loop id="myVideo">
+				<video autoplay muted loop id="myVideo">
 				<source src="media/sky.mp4" type="video/mp4" />
 			</video>
+			
 			<nav class="navbar navbar-light header">
-				<h1>Papo's WEATHER APP</h1>
+			
+				<div>Papo's WEATHER APP</div>
 			</nav>
 
 			<div class="row">
 				<div class="col">
 					<div class="card mt-1 border-warning">
 						<div class="card-body">
-							<form class="form-inline text-center"
-							id="city-form">
+							
+							<form class="form-inline text-center" id="city-form">
 								<label
 									class="my-1 mr-2 font label"
 									for="inlineFormCustomSelectPref"
 									>Check the Weather from this city</label
 								>
-									<input type="city" id="city-input" placeholder="Enter City">
-						
+								<input type="city" id="city-input" placeholder="Enter City" />
 
 								<button type="submit" class="btn btn-warning my-1 font" id="go">
 									Go
@@ -56,170 +57,176 @@
 					</div>
 				</div>
 			</div>
-	<div class="col-sm-12">
-					<div class="row mt-2">
-						<div class="col">
-							<div class="card border-warning">
-							<h2 class="card-header text-center border-warning" id = "new-city"></h2>
-							<h3 class="hard-text text-center " id = "current-time"></h3>
-						
-							<img src="media/sunny.jpg" alt="women coding" class="sunflower" />
-								<h4 class="hard-text text-center temp" id= "temp-input"> Temperature <button class ="a1" id="celcius">°C </button>
-								<button class ="a2" id="fahrenheit" >°F</button> 	</h4>
-						
-			
 
+			<div class="row mt-2">
+				<div class="col-5 align-self-center">
+					<div class="card border-warning">
+						<h2
+							class="card-header text-center border-warning"
+							id="new-city"
+						></h2>
+						<h3 class="hard-text text-center" id="current-time"></h3>
 
-								
-						</div>
+						<i class="fas fa-sun sun"></i>
+						<h4 class="hard-text text-center temp" id="temp-input">
+							45 °C <button class="a1" id="celcius">°C</button>
+							<button class="a2" id="fahrenheit">°F</button>
+						</h4>
 					</div>
 				</div>
-				</div>
 
-				<div class="col-sm-12">
-					<div class="row mt-2">
-						<div class="col">
-							<div class="card border-warning">
-								<h4 class="card-header text-center border-warning">
-									7-Day Weather Forecast
-								</h4>
-								<div class="card-body">
-									<div class="row border">
+				<div class="col-7">
+					<div class="card border-warning">
+						<h4 class="card-header text-center border-warning">
+							8-Day Weather Forecast
+						</h4>
+						<div class="card-body">
+							<div class="row border">
+								<div class="col-3 border">
+									<div class="row">
 										<div class="col text-center mt-2">
-											<p class="icon">☀️</p>
+											<span class="icon">☀️</span>
 										</div>
 										<div class="col">
 											<h5 class="card-title mt-2">23°C</h5>
 
-											<row class="col">
-												<p class="card-text">Thursday</p>
-											</row>
-											<row class="col">
-												<p class="card-text">Sept 2</p>
-											</row>
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
 										</div>
 									</div>
-
-									<div class="col">
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">🌥</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">23°C</h5>
-
-												<row class="col">
-													<p class="card-text">Friday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 3</p>
-												</row>
-											</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
 										</div>
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">☀️</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">20°C</h5>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
 
-												<row class="col">
-													<p class="card-text">Saturday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 4</p>
-												</row>
-											</div>
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
 										</div>
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">🌦</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">23°C</h5>
-
-												<row class="col">
-													<p class="card-text">Sunday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 5</p>
-												</row>
-											</div>
+									</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
 										</div>
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">☀️</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">28°C</h5>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
 
-												<row class="col">
-													<p class="card-text">Monday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 6</p>
-												</row>
-											</div>
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
 										</div>
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">⛈</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">15°C</h5>
-
-												<row class="col">
-													<p class="card-text">Tuesday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 7</p>
-												</row>
-											</div>
+									</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
 										</div>
-										<div class="row border">
-											<div class="col text-center mt-4">
-												<p class="icon">🌥</p>
-											</div>
-											<div class="col">
-												<h5 class="card-title mt-2">25°C</h5>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
 
-												<row class="col">
-													<p class="card-text">Wednesday</p>
-												</row>
-												<row class="col">
-													<p class="card-text">Sept 8</p>
-												</row>
-											</div>
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col mt-1">
-					<div class="card mt-1  border-warning">
-						<div class="card-body">
 
-		
+							<div class="row border">
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
+										</div>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
+
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
+										</div>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
+
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
+										</div>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
+
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-3 border">
+									<div class="row">
+										<div class="col text-center mt-2">
+											<span class="icon">☀️</span>
+										</div>
+										<div class="col">
+											<h5 class="card-title mt-2">23°C</h5>
+
+											<span>Thursday</span>
+
+											<span>Sept 2</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+							</div>
+				</div>
+							
+			</div>
+			
+
+		<div class = "row ">
+			<div class ="col text-center">
+			<div class ="card mt-2 border-warning">
+				
 					<footer class="footer font">
 							
 <a href="https://github.com/papoita/awesome-weather-app" target="_blank">Open-source code by </a>
 		
 						<a
 							href="https://www.linkedin.com/in/perezleivapaola/"
-							target="blank"
+							target="_blank"
 							class="linkedin"
 						>
 							Paola Perez
 						</a>
-				</div>
-				</div>
-				</div>
-				</div>
-		</div>
+		
+			</div>
+			</div>
+			</div>
+						</div>
+					</div>
+			
 		<script src="src/app.js"></script>
 	</body>
 </html>
