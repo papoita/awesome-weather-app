@@ -55,6 +55,7 @@ span {
 .sun {
 	font-size: 110px;
 	text-align: center;
+	display: block;
 }
 
 .font {
