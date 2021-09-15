@@ -13,7 +13,6 @@ console.log(now.getDay());
 console.log(now.getDate());
 // prints the day number of the day
 
-let newtime = document.querySelector("#current-time");
 let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
@@ -64,6 +63,7 @@ function searchCity(event) {
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", searchCity);
+
 //feature 3
 // display fake temp in C and F that when clicked changes
 
