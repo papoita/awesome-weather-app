@@ -89,5 +89,15 @@ footer {
 
 .temp {
 	line-height: 80px;
-	font-size: 70px;
+	font-size: 50px;
+}
+
+.a1 {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.a2 {
+	font-size: 20px;
+	line-height: 25px;
 }
