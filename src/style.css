@@ -31,9 +31,10 @@ h1 {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 40px;
 	font-family: "Montaga", serif;
 	opacity: 0.9;
+	font-weight: 400;
 }
 
 h3 {
@@ -63,7 +64,7 @@ span {
 }
 
 .label {
-	font-size: 25px;
+	font-size: 35px;
 }
 .currentcity {
 	text-align: center;
