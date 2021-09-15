@@ -31,40 +31,38 @@
 				<source src="media/sky.mp4" type="video/mp4" />
 			</video>
 			
-			<nav class="navbar navbar-light header">
-			
-				<div>Papo's WEATHER APP</div>
-			</nav>
-
-			<div class="row">
+		
+			<div class="row mt-5">
 				<div class="col">
 					<div class="card mt-1 border-warning">
 						<div class="card-body">
-							
-							<form class="form-inline text-center" id="city-form">
-								<label
-									class="my-1 mr-2 font label"
-									for="inlineFormCustomSelectPref"
-									>Check the Weather from this city</label
-								>
-								<input type="city" id="city-input" placeholder="Enter City" />
-
-								<button type="submit" class="btn btn-warning my-1 font" id="go">
-									Go
-								</button>
-							</form>
+				<h1>	Papo's WEATHER APP</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="row mt-2">
-				<div class="col-5 align-self-center">
+				<div class="col align-self-center">
 					<div class="card border-warning">
-						<h2
-							class="card-header text-center border-warning"
-							id="new-city"
-						></h2>
+						<div class= "row-4">
+						<div class="card-body">
+							<form class="form-inline text-center"
+							id="city-form">
+								<label
+									class="my-1 mr-2 font label"
+									for="inlineFormCustomSelectPref"
+									>Check the Weather from this city</label
+								>
+									<input type="city" id="city-input" placeholder="Enter City">
+						
+
+								<button type="submit" class="btn btn-warning my-1 font" id="go">
+									Go
+								</button>
+							</form>
+					
+</div>
 						<h3 class="hard-text text-center" id="current-time"></h3>
 
 						<i class="fas fa-sun sun"></i>
@@ -73,6 +71,7 @@
 							<button class="a2" id="fahrenheit">°F</button>
 						</h4>
 					</div>
+				</div>
 				</div>
 
 				<div class="col-7">
