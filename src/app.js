@@ -51,7 +51,7 @@ h3.innerHTML = ` ${day} <br> ${month} ${date},  ${year} <br> <small>${hours}:${m
 //add a search engine
 //display the city name in the page after submit
 
-function searchCity(event) {
+function cityInput(event) {
 	event.preventDefault();
 	let newCity = document.querySelector("#city-input");
 	console.log(newCity.value);
@@ -62,11 +62,11 @@ function searchCity(event) {
 }
 
 let cityForm = document.querySelector("#city-form");
-cityForm.addEventListener("submit", searchCity);
+cityForm.addEventListener("submit", cityInput);
 
 //feature 3
 // display fake temp in C and F that when clicked changes
-
+/*
 function change() {
 	let Cbutton = document.querySelector("#temp-input");
 	let temperature = 23;
@@ -91,3 +91,4 @@ function change2() {
 
 let Fbutton = document.querySelector("#fahrenheit");
 Fbutton.addEventListener("click", change2);
+*/
