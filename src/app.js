@@ -1,23 +1,20 @@
 /** @format */
 
 //feature 1 display current time and and date
-let now = new Date();
-console.log(now);
+let currentTime = new Date();
 
-console.log(now.getMonth());
-//month 8 is September because it starts at 0
-console.log(now.getFullYear());
-console.log(now.getMinutes());
-console.log(now.getDay());
-// starts at 0 which is Sunday
-console.log(now.getDate());
-// prints the day number of the day
+let dateElement = document.querySelector("#date");
 
-let date = now.getDate();
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let year = now.getFullYear();
+let hours = currentTime.getHours();
+if (hours < 10) {
+	hours = `0${hours}`;
+}
 
+let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+	minutes = `0${minutes}`;
+}
+let year = currentTime.getFullYear();
 let days = [
 	"Sunday",
 	"Monday",
@@ -27,7 +24,7 @@ let days = [
 	"Friday",
 	"Saturday",
 ];
-let day = days[now.getDay()]; //0 and 6
+let day = days[currentTime.getDay()]; //0 and 6
 
 let months = [
 	"January",
@@ -43,9 +40,11 @@ let months = [
 	"November",
 	"December",
 ];
-let month = months[now.getMonth()];
-let h3 = document.querySelector("h3");
-h3.innerHTML = ` ${day} <br> ${month} ${date},  ${year} <br> <small>${hours}:${minutes} </small>`;
+let month = months[currentTime.getMonth()];
+let date = currentTime.getDate();
+
+console.log(hours, minutes);
+dateElement.innerHTML = ` ${day} <br> ${month} ${date},  ${year} <br> <small>${hours}:${minutes} </small>`;
 
 //feature 2
 //add a search engine
