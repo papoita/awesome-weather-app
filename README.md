@@ -1,6 +1,6 @@
 # weather-app
  
-soluiton for week 1 -wireframe
+solution for week 1 -wireframe
 https://paola794229.invisionapp.com/freehand/Challenge-weather-wireframe-2PCpOHnb1
 
 solution for week 2 - wireframte to bootstrap and css
