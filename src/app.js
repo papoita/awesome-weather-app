@@ -80,10 +80,12 @@ function change() {
 let Cbutton = document.querySelector("#celcius");
 Cbutton.addEventListener("click", change);
 */
-function toFah() {
+function toFah(event) {
+	event.preventDefault();
 	//let Fbutton = document.querySelector("#temp-input");
-	//let temperature = document.getElementById("temp-input");
+	// temperature = document.getElementById("temp-input");
 	let temperature = 25;
+	temperature = Number(temperature);
 	console.log(temperature);
 	//console.log(Fbutton.value);
 	let tempC = Math.round(temperature);
@@ -96,3 +98,18 @@ function toFah() {
 
 let Fbutton = document.querySelector("#fahrenheit");
 Fbutton.addEventListener("click", toFah);
+/*
+function toCel(event) {
+	event.preventDefault();
+	let temperature = 25;
+	temperature = Number(temperature);
+	console.log(temperature);
+	let tempC = Math.round(temperature);
+	document.getElementById(
+		"temp-input"
+	).innerHTML = `${tempC} °C <button class ="a2" id="fahrenheit">°F </button>`;
+}
+
+let Cbutton = document.querySelector("#celcius");
+Cbutton.addEventListener("click", toCel);
+*/
